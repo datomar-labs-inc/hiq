@@ -26,7 +26,6 @@
     "commit": "git-cz",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "lint": "stylelint css/*.css",
     "minify": "minify dist/hiq.css --output dist/hiq.min.css",
     "postcss": "postcss css/hiq.css -o dist/hiq.css",
     "watch": "npm run lint && npm run postcss -- --watch",
@@ -34,8 +33,6 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "commitlint": {
@@ -49,7 +46,7 @@
     }
   },
   "stylelint": {
-    "extends": "stylelint-config-whq",
+    "extends": "stylelint-config-standard",
     "rules": {
       "at-rule-no-unknown": null,
       "comment-empty-line-before": null,
@@ -64,8 +61,6 @@
     "husky": "4.2.5",
     "minifier": "0.8.1",
     "semantic-release": "17.1.1",
-    "stylelint": "13.6.1",
-    "stylelint-config-whq": "2.3.0",
     "vuepress": "1.5.2"
   },
   "dependencies": {

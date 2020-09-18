@@ -5,6 +5,7 @@
     ],
     "ignoreFiles": "dist/*.css",
     "rules": {
+        "custom-property-no-outside-root": null,
         "at-rule-empty-line-before": null,
         "at-rule-no-unknown": null,
         "declaration-empty-line-before": ["never"],

@@ -33,11 +33,11 @@ label {
   /* scoped properties */
   --label-margin-bottom: var(--hiq-label-margin-bottom, 0.25rem);
   --label-font-weight: var(--hiq-label-font-weight, var(--hiq-font-weight-medium, 500));
-
   display: block;
   margin: 0 0 var(--label-margin-bottom);
   padding: 0;
   font-weight: var(--label-font-weight);
+  color: var(--hiq-label-text-color);
 }
 
 output {
