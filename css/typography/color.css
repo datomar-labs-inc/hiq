@@ -1,0 +1,47 @@
+.is-color-gray-1 {
+  color: var(--hiq-color-gray-1);
+}
+
+.is-color-gray-2 {
+  color: var(--hiq-color-gray-2);
+}
+
+.is-color-gray-3 {
+  color: var(--hiq-color-gray-3);
+}
+
+.is-color-gray-4 {
+  color: var(--hiq-color-gray-4);
+}
+
+.is-color-gray-5 {
+  color: var(--hiq-color-gray-5);
+}
+
+.is-color-gray-6 {
+  color: var(--hiq-color-gray-6);
+}
+
+.is-color-gray-7 {
+  color: var(--hiq-color-gray-7);
+}
+
+.is-color-gray-8 {
+  color: var(--hiq-color-gray-8);
+}
+
+.is-color-primary {
+  color: var(--hiq-color-primary);
+}
+
+.is-color-success {
+  color: var(--hiq-color-success);
+}
+
+.is-color-warning {
+  color: var(--hiq-color-warning);
+}
+
+.is-color-danger {
+  color: var(--hiq-color-danger);
+}

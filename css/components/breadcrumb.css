@@ -1,0 +1,63 @@
+.breadcrumb {
+  /* breadcrumb */
+  --hiq-breadcrumb-item-color: var(--hiq-link-color);
+  --hiq-breadcrumb-item-hover-color: var(--hiq-link-hover-color);
+  --hiq-breadcrumb-item-active-color: var(--hiq-link-active-color);
+  --hiq-breadcrumb-item-padding-vertical: 0;
+  --hiq-breadcrumb-item-padding-horizontal: 0.75em;
+  --hiq-breadcrumb-item-separator-color: var(--hiq-color-gray-4);
+
+  @mixin is-unselectable;
+
+  font-size: var(--hiq-font-size-base);
+  white-space: nowrap;
+
+  & a {
+    align-items: center;
+    color: var(--hiq-breadcrumb-item-color);
+    display: flex;
+    justify-content: center;
+    padding: var(--hiq-breadcrumb-item-padding-vertical) var(--hiq-breadcrumb-item-padding-horizontal);
+
+    & :hover {
+      color: var(--hiq-breadcrumb-item-hover-color);
+    }
+  }
+
+  & li {
+    align-items: center;
+    display: flex;
+
+    & .is-active {
+      a {
+        color: var(--hiq-breadcrumb-item-active-color);
+        cursor: default;
+        pointer-events: none;
+      }
+    }
+
+    &::before {
+      color: var(--hiq-breadcrumb-item-separator-color);
+      content: ">";
+    }
+  }
+
+  ul, ol {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  &.is-centered {
+    ul, ol {
+      justify-content: center;
+    }
+  }
+
+  &.is-right {
+    ul, ol {
+      justify-content: flex-end;
+    }
+  }
+}

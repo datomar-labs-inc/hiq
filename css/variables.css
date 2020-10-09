@@ -9,7 +9,7 @@
 
   /* gray palette */
   --hiq-color-gray-1: hsl(220, 10%, 5%);
-  --hiq-color-gray-2: hsl(220, 10%, 10%);
+  --hiq-color-gray-2: hsl(216, 10%, 10%);
   --hiq-color-gray-3: hsl(220, 10%, 20%);
   --hiq-color-gray-4: hsl(220, 10%, 40%);
   --hiq-color-gray-5: hsl(220, 10%, 60%);
@@ -339,4 +339,12 @@
 
   /* dialogs */
   --hiq-dialog-border-radius: var(--hiq-border-radius);
+
+  /* breadcrumb */
+  --hiq-breadcrumb-item-color: var(--hiq-link-color);
+  --hiq-breadcrumb-item-hover-color: var(--hiq-link-hover-color);
+  --hiq-breadcrumb-item-active-color: var(--hiq-link-active-color);
+  --hiq-breadcrumb-item-padding-vertical: 0;
+  --hiq-breadcrumb-item-padding-horizontal: 0.75em;
+  --hiq-breadcrumb-item-separator-color: var(--hiq-color-gray-4)
 }
